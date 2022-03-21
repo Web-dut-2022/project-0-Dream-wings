@@ -1,30 +1,42 @@
 <html>
 <head>
   <style type="text/css">
-    .login-button { /* 按钮美化 */
-      width: 270px; /* 宽度 */
-      height: 40px; /* 高度 */
-      border-width: 0px; /* 边框宽度 */
-      border-radius: 3px; /* 边框半径 */
-      background: #1E90FF; /* 背景颜色 */
-      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
-      outline: none; /* 不显示轮廓线 */
-      font-family: Microsoft YaHei; /* 设置字体 */
-      color: white; /* 字体颜色 */
-      font-size: 17px; /* 字体大小 */
+    body {
+        display: flex;
     }
-    .login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+    .content {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin:auto;
+    } 
+    .login-button {
+      width: 270px;
+      height: 40px;
+      border-width: 0px;
+      border-radius: 3px;
+      background: #1E90FF;
+      cursor: pointer;
+      outline: none;
+      font-family: Microsoft YaHei;
+      color: white;
+      font-size: 17px;
+    }
+    .login-button:hover {
       background: #5599FF;
     }
     .text-frame{width:400px; height:40px;} 
-  </style>
+</style>
+
 </head>
 <body>
-  <div style="text-align:center">
+  <div class="content">
     <form action="https://www.baidu.com/s">
       <input type="text" class="text-frame" name="wd">
       <input type="submit" class="login-button" value="百度一下">
     </form>
   </div>
-</body>
-</html>
+
+
+</body></html>
